@@ -1,0 +1,30 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 500px;
+  height: 300px;
+  background-color: #f2f2f2;
+  border: 1px solid white;
+  padding: 20px;
+  display:flex;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: rgb(233, 95, 118);
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 25px;
+  text-align: center;
+}
+
+#result {
+  font-weight: bold;
+  margin-top: 20px;
+}

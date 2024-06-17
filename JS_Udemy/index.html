@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <div class="tabs-container">
+      <ul class="tabs-nav"></ul>
+      <div class="tabs-content"></div>
+    </div>
+  </body>
+  <script>
+    $(document).ready(function () {
+      // Add a new tab and its content
+      function addTab(title, content) {
+        // Create a unique ID for the tab
+        var tabId = "tab-" + $(".tabs-nav li").length;
+
+        // Create the tab navigation item
+        var tabNavItem = $("<li>").attr("data-tab", tabId).text(title);
+
+        // Create the tab content
+        var tabContent = $("<div>")
+          .addClass("tab-pane")
+          .attr("id", tabId)
+          .html(content);
+
+        // Append the tab navigation item and content
+        $(".tabs-nav").append(tabNavItem);
+        $(".tabs-content").append(tabContent);
+      }
+
+      // Switch to the selected tab
+      function switchTab(tabId) {
+        // Remove the active class from all tabs
+        $(".tabs-nav li").removeClass("active");
+
+        // Add the active class to the selected tab
+        $('[data-tab="' + tabId + '"]').addClass("active");
+
+        // Hide all tab content
+        $(".tabs-content .tab-pane").hide();
+
+        // Show the selected tab content
+        $("#" + tabId).show();
+      }
+
+      // Handle click event on tab navigation item
+      $(document).on("click", ".tabs-nav li", function () {
+        var tabId = $(this).attr("data-tab");
+        switchTab(tabId);
+      });
+
+      // Example usage: Add two tabs
+      addTab("Tab 1", "Content for Tab 1");
+      addTab("Tab 2", "Content for Tab 2");
+      addTab("Tab 3", "Content for Tab 3");
+
+      // Show the first tab by default
+      switchTab("tab-0");
+    });
+  </script>
+</html>

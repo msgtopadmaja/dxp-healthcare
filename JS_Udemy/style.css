@@ -1,0 +1,24 @@
+.tabs-container {
+    width: 100%;
+  }
+  
+  .tabs-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .tabs-nav li {
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .tabs-nav li.active {
+    font-weight: bold;
+  }
+  
+  .tabs-content .tab-pane {
+    display: none;
+  }
+  

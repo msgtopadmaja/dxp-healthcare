@@ -1,0 +1,40 @@
+Uses of Closures
+
+module design pattern
+currying
+function like once
+memoize
+maintaining state in async world
+setTimeOuts
+Iterators
+and many others.....
+
+
+closure
+
+A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment)
+
+function outer() {
+ var a = 10;
+function inner() {
+   console.log(a);
+}
+return inner;
+}
+
+outer();
+
+
+Named Function:
+
+var name = function namedfun() {
+console.log("Named Function");
+}
+
+
+Algorithm in JS
+
+Mark and sweep
+inlining
+copy elision
+inline caching

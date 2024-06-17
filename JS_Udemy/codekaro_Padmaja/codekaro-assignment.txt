@@ -1,0 +1,11 @@
+Assignment 1: Check Eligibility to Vote
+
+Write a JavaScript program that prompts the user to enter their age. The program should check if the entered age is greater than or equal to 18. If the age is greater than or equal to 18, display a message stating "You are eligible to vote." Otherwise, display a message stating "You are not eligible to vote yet."
+
+Assignment 2: Print the Table of a Number
+
+Write a JavaScript program that prompts the user to enter a number. The program should then generate and display the table of that number from 1 to 10. Each line of the table should display the multiplication of the entered number with the respective multiplier (from 1 to 10).
+
+Assignment 3: Convert Dollars to Rupees
+
+Write a JavaScript program that prompts the user to enter an amount in dollars. The program should convert the entered dollar amount to Indian Rupees. Use the conversion rate of 1 dollar = 74.5 rupees. Display the converted amount to the user.

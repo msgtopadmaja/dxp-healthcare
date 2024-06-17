@@ -1,0 +1,16 @@
+1.HTML, DOM & JavaScript
+2.Nodes and Element
+3.Quering DOM Nodes & Traversing the DOM
+4. Evaluating & Manipulating DOM NOdes
+5. Creating & Removing DOM Nodes
+
+document and window are interacted with the browser
+
+1. document is working with loaded HTML code there also another important global object and actually, document is a property of that other global object that is windows objects.
+
+
+Nodes:
+
+1. Element Node -HTML tag
+2. Text Node - Texts
+3. Attribute Node - Attribute

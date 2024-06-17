@@ -1,0 +1,12 @@
+ES5 vs ES6 + syntax 
+
+
+ES- ES stands for ECMAScript
+
+ES5
+   1. Supported in basically all browser, including old IE
+   2. Only had var, not let or const
+   3. Generally same syntax as ES6, but quite some missing features
+ES6
+   1. Supported in modern browsers, can mostly be transpiled to ES5.
+   2. Many new features that help us write cleaner, better and faster code.

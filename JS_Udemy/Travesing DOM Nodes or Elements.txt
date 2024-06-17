@@ -1,0 +1,33 @@
+Child - Direct child node or element
+Descedent - Direct or indirect child node or element
+Parent - Direct Parent Node or Element
+Ancestor - Direct or indirect Parent node or element
+
+
+parentNode, parentElement, closest()
+firstChild, firstElementChild
+lastChild, lastElementChild
+childNodes, children, querySelector()
+previousSibling, previousElementSibling
+nextSibling, nextElementSibling
+
+closest() -> It is used to get the ancestor parent of the element
+
+
+1. Creating the element:
+
+
+createElement() 
+Append the new element to the DOM Element or Node.	
+1. appendChild()
+2. append()
+----------------------
+Insert New DOM ELement or Node in Specific Position
+3. prepend()
+4. before()
+5. after()
+6. insertBefore()
+----------------------
+Replace existing DOM Element or Node with new one
+7. replaceChild()
+8. replaceWith()
